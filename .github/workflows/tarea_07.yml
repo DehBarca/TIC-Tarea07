@@ -1,0 +1,9 @@
+name: Tarea 07 Barraza
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.11-slim
+    steps:
+      - run: echo "TESTING"
+      - run: python --version
